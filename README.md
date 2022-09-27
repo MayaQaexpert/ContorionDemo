@@ -22,9 +22,16 @@ pip install robotframework
 
 for running test:
 
-    robot Contorion_Login.robot
+Clone repository
+
+## Steps to execute test
+
+git clone https://github.com/MayaQaexpert/ContorionDemo.git
+
+robot Contorion_Login.robot
 
 After running tests, get report and log in HTML format.
 
-report.html
-log.html
+## report.html
+
+## log.html
