@@ -27,7 +27,7 @@ Login Page
        Click Button    xpath=//button[@type="submit"]
        Element Should Contain    xpath=//*[@id="content"]//div[2]/div[1]/div[2]   Du bist nun bei Contorion angemeldet.
        Mouse Over    xpath=//i[@class="icon--account header__nav-item-icon"]
-       Element Should Contain    xpath=//h3[@class="txt--truncate"]   Hallo, maza
+       Element Should Contain    xpath=//h3[@class="txt--truncate"]   Hallo, Maya
        Click Element    name=q
        Input Text    name=q   Hammer
        Click Button    id=search-button

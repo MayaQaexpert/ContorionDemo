@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220927 15:54:04.535" rpa="false" schemaversion="3">
+<suite id="s1" name="Contorion Login" source="C:\Users\Maya\IdeaProjects\Python\API\ContorionDemo\Contorion_Login.robot">
+<test id="s1-t1" name="Contorion Credential Login" line="13">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 15:54:04.988" level="INFO">Opening browser 'chrome' to base url 'https://www.contorion.de/'.</msg>
+<status status="PASS" starttime="20220927 15:54:04.987" endtime="20220927 15:54:15.760"/>
+</kw>
+<kw name="Login Page">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220927 15:54:15.773" endtime="20220927 15:54:16.414"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>id=popin_tc_privacy_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:16.416" level="INFO">Clicking button 'id=popin_tc_privacy_button'.</msg>
+<status status="PASS" starttime="20220927 15:54:16.415" endtime="20220927 15:54:17.926"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="page-home-index"]//header/div[3]/div/div[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:17.929" level="INFO">Clicking element 'xpath=//*[@id="page-home-index"]//header/div[3]/div/div[4]/a'.</msg>
+<status status="PASS" starttime="20220927 15:54:17.927" endtime="20220927 15:54:25.322"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//*[@id="login_email"]</arg>
+<arg>mayaraj01@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:25.324" level="INFO">Typing text 'mayaraj01@gmail.com' into text field 'xpath=//*[@id="login_email"]'.</msg>
+<status status="PASS" starttime="20220927 15:54:25.322" endtime="20220927 15:54:25.884"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>xpath=//*[@id="login_password"]</arg>
+<arg>Demo12345</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:25.885" level="INFO">Typing password into text field 'xpath=//*[@id="login_password"]'.</msg>
+<msg timestamp="20220927 15:54:26.061" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220927 15:54:26.268" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220927 15:54:25.885" endtime="20220927 15:54:26.269"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:26.271" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220927 15:54:26.271" endtime="20220927 15:54:58.086"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>xpath=//*[@id="content"]//div[2]/div[1]/div[2]</arg>
+<arg>Du bist nun bei Contorion angemeldet.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220927 15:54:58.163" level="INFO">Element 'xpath=//*[@id="content"]//div[2]/div[1]/div[2]' contains text 'Du bist nun bei Contorion angemeldet.'.</msg>
+<status status="PASS" starttime="20220927 15:54:58.086" endtime="20220927 15:54:58.163"/>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<arg>xpath=//i[@class="icon--account header__nav-item-icon"]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220927 15:54:58.166" level="INFO">Simulating Mouse Over on element 'xpath=//i[@class="icon--account header__nav-item-icon"]'.</msg>
+<status status="PASS" starttime="20220927 15:54:58.163" endtime="20220927 15:54:58.520"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>xpath=//h3[@class="txt--truncate"]</arg>
+<arg>Hallo, Maya</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220927 15:54:58.619" level="INFO">Element 'xpath=//h3[@class="txt--truncate"]' contains text 'Hallo, Maya'.</msg>
+<status status="PASS" starttime="20220927 15:54:58.520" endtime="20220927 15:54:58.619"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>name=q</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:58.620" level="INFO">Clicking element 'name=q'.</msg>
+<status status="PASS" starttime="20220927 15:54:58.620" endtime="20220927 15:54:58.789"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=q</arg>
+<arg>Hammer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:58.791" level="INFO">Typing text 'Hammer' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20220927 15:54:58.790" endtime="20220927 15:54:59.026"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>id=search-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220927 15:54:59.027" level="INFO">Clicking button 'id=search-button'.</msg>
+<status status="PASS" starttime="20220927 15:54:59.027" endtime="20220927 15:54:59.202"/>
+</kw>
+<status status="PASS" starttime="20220927 15:54:15.772" endtime="20220927 15:54:59.202"/>
+</kw>
+<status status="PASS" starttime="20220927 15:54:04.986" endtime="20220927 15:54:59.204"/>
+</test>
+<doc>Test for checking Login Page</doc>
+<status status="PASS" starttime="20220927 15:54:04.538" endtime="20220927 15:54:59.220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Contorion Login">Contorion Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
